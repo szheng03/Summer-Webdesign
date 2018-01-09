@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P|VT323');
+body, html {
+  cursor: url(http://i38.photobucket.com/albums/e147/lalalagroovy/pixels/ththStar_by_kitty_sama.gif), pointer;
+background-image:url(file:///Users/summer/Desktop/maxresdefault.jpg);
+
+
+}
+
+h1 {
+	color: rgba(240,196,32,1);
+	font-size: 5em;
+	font-family: 'Press Start 2P', cursive;
+	text-transform: uppercase;
+}
+h2{
+	color: rgba(255,255,255,1);
+	font-size: 3em;
+	font-family: 'VT323', monospace; 
+	text-align: center;
+}
+.moon{
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+h3{
+	color: rgba(255,255,255,0.5);
+	font-size:1em;
+	font-family:'VT323', monospace;
+	text-align: center;
+
+}
+.stars{
+ 	float:none;
+ 	height:auto;
+ 	padding:10px;
+ }
+div{
+	text-align:center;
+	color: rgba(255,255,255,1);
+	font-family: 'VT323', monospace;
+	font-size: 2em;	
+}
+
+.italics {
+	font-style: italic;
+}
+
+#title {
+	font-size: 3em;
+}
+
+
+.ocean{
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding:30px;
+ }
+
+
