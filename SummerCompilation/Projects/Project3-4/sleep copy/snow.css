@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Dosis|Open+Sans');
+
+
+p{
+  color: rgba(255,255,255,1);
+  vertical-align: middle;
+  margin:auto;
+  text-align:center;
+  padding: 5px 0;
+    width:800px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    font-family: 'Dosis', sans-serif;
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a{
+    font-size:16px;
+    color:#FFF;
+      transition: all 0.3s ease-in;
+      text-decoration:none;
+}
+
+a:hover{
+    -webkit-stroke-width: 20px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 20px 0px 20px white;
+}
+
+
+@keyframes flickerAnimation {
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+  
+}
+@-o-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+ 
+}
+@-moz-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+}
+@-webkit-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+}
+.soon {
+   -webkit-animation: flickerAnimation 5s ;
+   -moz-animation: flickerAnimation 5s ;
+   -o-animation: flickerAnimation 5s ;
+    animation: flickerAnimation 5s ;
+    width:800px;
+}
+
+.white {
+  -webkit-animation: flickerAnimation 10s;
+   -moz-animation: flickerAnimation 10s;
+   -o-animation: flickerAnimation 10s ;
+    animation: flickerAnimation 10s ;
+    width:800px;
+}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a{
+    font-size:16px;
+    color:#FFF;
+      transition: all 0.3s ease-in;
+      text-decoration:none;
+}
+
+a:hover{
+    -webkit-stroke-width: 20px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 20px 0px 20px white;
+}
+
+
+.soon{
+  transform:translate(-100px, 100px);
+}
+
+.white{
+  width:400px;
+  transform:translate(250px,-300px);
+}

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+
+
+
+h1 {
+  color: rgb(255, 235, 150);
+  font-family: 'Rammetto One', cursive;
+}
+
+p, li {
+  color: rgb(255, 235, 220);
+  font-family: 'Rammetto One', cursive;
+}
+
+h3 {
+  color: rgb(255, 235, 190);
+  font-family: 'Rammetto One', cursive;
+  text-decoration: underline;
+}

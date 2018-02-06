@@ -1,0 +1,59 @@
+*{
+	padding: 0;
+	margin:0;
+}
+.text{
+	background: black;
+	color:white;
+	text-align:center;
+}
+.hero{
+	display:flex;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 500px;
+	height:500px;
+}
+h1{
+	text-transform:uppercase;
+	padding:10px;
+}
+.text,img{
+	flex:1;
+}
+.text{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	width:500px;
+}
+
+p{
+	width:500px;
+	padding:10px;
+}
+.date{
+	font-size:50;
+}
+.subtitle{
+	font-style:italic;
+}
+.feature-img{
+	background: url(file:///Users/summer/Desktop/untitled%20folder/Unknown.jpeg) no-repeat center center;
+	background-size:cover;
+}
+.more-articles {
+	padding: 10px;
+	transform:translateX(200px);
+}
+.second-image{
+	width:500px;
+	padding:20px;
+}
+
+.second{
+	padding:10px;
+	float:right;
+	transform:translate(-150px,-445px);
+}
+
+@media screen and (max-width:)
