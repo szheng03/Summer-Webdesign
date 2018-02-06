@@ -13,6 +13,7 @@
   top: 0px;
   width: 100%;
   z-index: 0;
+  margin:0;
 }
 
 .crossfade > figure:nth-child(1) { background-image: url('DSCF1247.JPG'); }
@@ -111,16 +112,84 @@ p{
   margin:auto;
   text-align:center;
   padding: 5px 0;
-    border: 3px solid white;
-    width:140px;
+    width:800px;
     margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-300px, -30px);
     font-family: 'Dosis', sans-serif;
     margin-top: 25px;
     font-size: 30px;
     text-align: center;}
+
+@keyframes flickerAnimation {
+  0%   { opacity:0; }
+  50%  { opacity:1; }
+  100% { opacity:0; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:0; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.hungry {
+   -webkit-animation: flickerAnimation 5s infinite;
+   -moz-animation: flickerAnimation 5s infinite;
+   -o-animation: flickerAnimation 5s infinite;
+    animation: flickerAnimation 5s infinite;
+    transform:translate(200px,-200px);
+}
+
+
+.beach {
+   -webkit-animation: flickerAnimation 7s infinite;
+   -moz-animation: flickerAnimation 7s infinite;
+   -o-animation: flickerAnimation 7s infinite;
+    animation: flickerAnimation 7s infinite;
+    transform:translate(-400px,0px);
+}
+
+.snow {
+   -webkit-animation: flickerAnimation 8s infinite;
+   -moz-animation: flickerAnimation 8s infinite;
+   -o-animation: flickerAnimation 8s infinite;
+    animation: flickerAnimation 8s infinite;
+    transform:translate(200px,200px);
+}
+
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a{
+    font-size:16px;
+    color:#FFF;
+      transition: all 0.3s ease-in;
+      text-decoration:none;
+}
+
+a:hover{
+    -webkit-stroke-width: 20px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 20px 0px 20px white;
+}
+
 
 

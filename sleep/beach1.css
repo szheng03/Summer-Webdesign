@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Dosis|Open+Sans');
+
+
+h1{
+  color: rgba(255,255,255,1);
+  vertical-align: middle;
+  margin:auto;
+  text-align:center;
+  padding: 5px 0;
+    width:300px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    font-family: 'Dosis', sans-serif;
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;}
+
+.crossfade > figure {
+  animation: imageAnimation 30s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left: 0px;
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  z-index: 0;
+}
+
+.crossfade > figure:nth-child(1) {
+
+  animation-delay: 8s;
+
+ background-image: url('IMG_4558 3.JPG'); }
+
+.crossfade > figure:nth-child(2) { 
+
+  animation-delay: 16s;
+
+  background-image: url('IMG_4103 2.JPG');}
+
+
+.crossfade > figure:nth-child(3) {
+
+  animation-delay: 24s;
+
+  background-image: url('IMG_8289 2.JPG');
+
+}
+
+ 
+
+
+ 
+
+
+@keyframes
+imageAnimation {  0% {
+
+ animation-timing-function: ease-in;
+
+ opacity: 0;
+
+}
+
+ 8% {
+
+ animation-timing-function: ease-out;
+
+ opacity: 1;
+
+}
+
+ 17% {
+color: 
+ opacity: 1
+}
+
+ 25% {
+color:black;
+ opacity: 1
+
+}
+
+ 100% {
+color:black;
+ opacity: 1
+
+}
+audio { 
+   display:none;
+}
+
+}
+
+p{
+  color: rgba(255,255,255,1);
+  vertical-align: middle;
+  margin:auto;
+  text-align:center;
+  padding: 5px 0;
+    width:300px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    font-family: 'Dosis', sans-serif;
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a{
+    font-size:16px;
+    color:#FFF;
+      transition: all 0.3s ease-in;
+      text-decoration:none;
+}
+
+a:hover{
+    -webkit-stroke-width: 20px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 20px 0px 20px white;
+}
+
+div{
+    -webkit-filter: blur(10px) brightness(.5);
+    filter: blur(10px) brightness(.5);
+  
+  }

@@ -1,6 +1,16 @@
-function showBack() { 
-    document.getElementById("Back").style.display = "inline"; 
+function showThoughts() { 
+    document.getElementById("Thoughts").style.display = "inline"; 
 }
 
-//this calls the function above, 3000 milliseconds is 3 seconds, adjust here to make it a longer interval
-setTimeout("showBack()", 14000);
+
+setTimeout("showThoughts()", 15000);
+
+
+let playNow = function() {
+  let audio = new Audio('Turning in Bed Sound Effect1.mp3');
+  audio.play();
+}
+
+setTimeout(function() {
+  playNow();
+}, 0);

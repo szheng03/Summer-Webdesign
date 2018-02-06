@@ -1,5 +1,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Arvo|Dosis|Open+Sans');
+ <style media="screen">
+ .sqs-audio-embed {
+   visibility: hidden;
+ }
 
 
 h1{
@@ -7,27 +11,71 @@ h1{
 	vertical-align: middle;
 	margin:auto;
 	text-align:center;
-	padding: 5px 0;
-    border: 3px solid white;
-    width:500px;
+	padding: 5px ;
+    font-size:28px;
   	margin: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    left: 42%;
+    white-space: nowrap;
+  overflow: hidden;
     font-family: 'Dosis', sans-serif;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    animation: type 4s ;
     
  }
 
-
-.container{
-	background: none;
-	
-
+a{
+    text-decoration:none;
 }
 
-.container:hover { 
-	background: #191919; 
+a:hover{
+    text-decoration:underline;
+}
+
+a{
+    font-size:16px;
+    color:#FFF;
+      transition: all 0.3s ease-in;
+      text-decoration:none;
+}
+
+a:hover{
+    -webkit-stroke-width: 20px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 20px 0px 20px white;
+}
+
+h1:nth-child(2){
+  animation: type2 4s ;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+
+
+audio { 
+   display:none;
 }
 
 #everything {
@@ -39,6 +87,33 @@ h1{
 
 }
 
+ @keyframes flickerAnimation {
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+  
+}
+@-o-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+ 
+}
+@-moz-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+}
+@-webkit-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+}
+.next {
+   -webkit-animation: flickerAnimation 5s ;
+   -moz-animation: flickerAnimation 5s ;
+   -o-animation: flickerAnimation 5s ;
+    animation: flickerAnimation 5s ;
+}
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
