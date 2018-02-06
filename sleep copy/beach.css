@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Dosis|Open+Sans');
+
+
+p{
+  color: rgba(255,255,255,1);
+  vertical-align: middle;
+  margin:auto;
+  text-align:center;
+  padding: 5px 0;
+    width:1000px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-80%, -50%);
+    font-family: 'Dosis', sans-serif;
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a{
+    font-size:16px;
+    color:#FFF;
+      transition: all 0.3s ease-in;
+      text-decoration:none;
+}
+
+a:hover{
+    -webkit-stroke-width: 20px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 20px 0px 20px white;
+}
+
+#Thoughts p{
+  opacity: 0;
+}
+
+@keyframes flickerAnimation {
+  0%  { opacity:0; }
+  25%   { opacity:1; }
+  75% { opacity: 1 }
+  100% { opacity: 0; }
+}
+
+
+@keyframes flickerAnimationend {
+  0%  { opacity:0; }
+  25%   { opacity:1; }
+  75% { opacity: 1 }
+  100% { opacity: 1; }
+}
+}
+@-o-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+
+}
+@-moz-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+}
+@-webkit-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+}
+
+
+.missing {
+   -webkit-animation: flickerAnimation 8s ;
+   -moz-animation: flickerAnimation 8s ;
+   -o-animation: flickerAnimation 8s ;
+    animation: flickerAnimation 8s alternate 1 forwards 2s;
+    width:800px;
+}
+
+.remember {
+  -webkit-animation: flickerAnimation 8s;
+   -moz-animation: flickerAnimation 8s;
+   -o-animation: flickerAnimation 8s ;
+    animation: flickerAnimation 8s alternate 1 forwards 8s ;
+    width:800px;
+}
+
+.cold {
+  -webkit-animation: flickerAnimation 8s  ;
+   -moz-animation: flickerAnimation 8s ;
+   -o-animation: flickerAnimation 8s ;
+    animation: flickerAnimation 8s alternate 1 forwards 14s ;
+    width:800px;
+
+}
+
+.crab{
+  -webkit-animation: flickerAnimation 8s ;
+   -moz-animation: flickerAnimation 8s ;
+   -o-animation: flickerAnimation 8s ;
+    animation: flickerAnimation 8s alternate 1 forwards 20s;
+    width:800px;
+
+}
+
+.seagull{
+  -webkit-animation: flickerAnimation 8s  ;
+   -moz-animation: flickerAnimation 8s ;
+   -o-animation: flickerAnimation 8s ;
+    animation: flickerAnimation 8s alternate 1 forwards 26s;
+    width:800px;
+}
+
+.rock{
+  -webkit-animation: flickerAnimation 8s  ;
+   -moz-animation: flickerAnimation 8s ;
+   -o-animation: flickerAnimation 8s ;
+    animation: flickerAnimation 8s alternate 1 forwards 32s;
+    width:800px;
+}
+
+.smoke{
+  -webkit-animation: flickerAnimation 8s  ;
+   -moz-animation: flickerAnimation 8s ;
+   -o-animation: flickerAnimation 8s ;
+    animation: flickerAnimation 8s alternate 1 forwards 38s;
+    width:800px;
+}
+
+.end{
+  -webkit-animation: flickerAnimationend 8s  ;
+   -moz-animation: flickerAnimationend 8s ;
+   -o-animation: flickerAnimationend 8s ;
+    animation: flickerAnimationend 8s  forwards 44s;
+    width:800px;
+}
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a{
+    font-size:16px;
+    color:#FFF;
+      transition: all 0.3s ease-in;
+      text-decoration:none;
+}
+
+a:hover{
+    -webkit-stroke-width: 20px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 20px 0px 20px white;
+}
+
+.missing{
+  transform:translate(-100px, 100px);
+  animation-direction: alternate;
+}
+
+.remember{
+  width:400px;
+  transform:translate(250px,-300px);
+}
+
+.cold{
+  transform:translate(-500px,200px);
+}
+}
+
+.crab{
+  transform:translate(-400px,200px);
+}
+
+.seagull{
+  transform:translate(-50px,-300px);
+}
+
+.rock{
+  transform:translate(-80px,100px);
+}
+
+.smoke{
+  transform:translate(-600px,-200px);
+}
+
+.end{
+  transform:translate(-100px,0px);
+}
