@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo|Dosis|Open+Sans');
+
+
+
+p{
+ 
+  vertical-align: middle;
+  margin:auto;
+  text-align:center;
+  padding: 5px 0;
+    width:1000px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-500px, -30px);
+    font-family: 'Dosis', sans-serif;
+    margin-top: 25px;
+    font-size: 30px;
+    text-align: center;}
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a{
+    font-size:16px;
+    color: rgba(0,0,0,1);
+      transition: all 0.3s ease-in;
+      text-decoration:none;
+}
+
+a:hover{
+    -webkit-stroke-width: 20px;
+      -webkit-stroke-color: rgba(0,0,0,1);;
+      -webkit-fill-color: rgba(0,0,0,1);;
+      text-shadow: 20px 0px 20px white;
+}
