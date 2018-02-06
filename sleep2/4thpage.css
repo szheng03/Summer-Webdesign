@@ -1,0 +1,186 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Arvo|Dosis|Open+Sans');
+
+
+
+h1{
+  color: rgba(255,255,255,1);
+  vertical-align: middle;
+  margin:auto;
+  text-align:center;
+  padding: 5px 0;
+    width:300px;
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    font-family: 'Dosis', sans-serif;
+    margin-top: 25px;
+    font-size: 25px;
+    text-align: center;
+     -webkit-transform: perspective(1px);
+    transform: perspective(1px);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+}
+
+
+
+a{
+    text-decoration:none;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+a{
+    font-size:16px;
+    color:#FFF;
+      transition: all 0.3s ease-in;
+      text-decoration:none;
+}
+
+a:hover{
+    -webkit-stroke-width: 20px;
+      -webkit-stroke-color: #FFFFFF;
+      -webkit-fill-color: #FFFFFF;
+      text-shadow: 20px 0px 20px white;
+}
+
+.crossfade > figure {
+  animation: imageAnimation 25s linear infinite 0s;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  color: transparent;
+  height: 100%;
+  left:-40px;
+  opacity: 0;
+  position: absolute;
+  top: -21px;
+  width: 100%;
+  z-index: 0;
+}
+
+audio {
+  display:none;
+}
+
+.crossfade > figure:nth-child(1) { background-image: url('DSCF1240.JPG'); }
+  
+.crossfade > figure:nth-child(2) { 
+
+  animation-delay: 2s;
+
+  background-image: url('DSCF1241.JPG');}
+
+.crossfade > figure:nth-child(3) { 
+
+  animation-delay: 4s;
+
+  background-image: url('DSCF1242.JPG');}
+
+
+  @keyframes
+imageAnimation {  0% {
+
+ animation-timing-function: ease-in;
+
+ opacity: 0;
+
+}
+
+ 8% {
+
+ animation-timing-function: ease-out;
+
+ opacity: 1;
+
+}
+
+ 17% {
+color: 
+ opacity: 1
+}
+
+ 25% {
+color:black;
+ opacity: 1
+
+}
+
+ 100% {
+color:black;
+ opacity: 1
+
+}
+
+
+}
+
+
+audio { 
+   display:none;
+}
+
+#everything {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; 
+
+}
+
+
+ @keyframes flickerAnimation {
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+  
+}
+@-o-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+ 
+}
+@-moz-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+}
+@-webkit-keyframes flickerAnimation{
+  0%  { opacity:0; }
+  50%   { opacity:1; }
+  
+}
+@keyframes flickerAnimationend {
+  0%  { opacity:0; }
+  25%   { opacity:1; }
+  75% { opacity: 1 }
+  100% { opacity: 1; }
+}
+.next{
+  opacity:0;
+   -webkit-animation: flickerAnimationend 3s ;
+   -moz-animation: flickerAnimationend 3s ;
+   -o-animation: flickerAnimationend 3s ;
+    animation: flickerAnimationend 3s forwards 6s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+
